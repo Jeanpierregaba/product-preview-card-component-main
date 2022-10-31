@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+:root{
+    --backimage: url("./images/image-product-desktop.jpg")
+}
+*{
+    background-color: hsl(30, 38%, 92%);
+}
+.MainBlock {
+    position: relative;
+    background-color: hsl(30, 38%, 92%);
+    width: 1440px;
+    height: 750px;
+    margin: auto;
+}
+
+.SecondBlock {
+    position: absolute;
+    left: 420px;
+    top: 150px;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    border-radius: 3%;
+}
+
+.ParfumeImg {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    border-radius: 3%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.SecondBlock h5 {
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    bottom: 385px;
+    left: 325px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+}
+
+.MainTitle {
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    bottom: 255px;
+    left: 325px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.SecondBlock p {
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    color: hsl(228, 12%, 48%);
+    bottom: 175px;
+    left: 325px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.BigPrice {
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    color: hsl(158, 36%, 37%);
+    bottom: 100px;
+    left: 325px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.LittlePrice {
+    position: absolute;
+    text-align: left;
+    text-decoration: line-through;
+    background-color: white;
+    color: hsl(228, 12%, 48%);
+    bottom: 100px;
+    left: 500px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+button {
+    position: absolute;
+    bottom: 50px;
+    left: 325px;
+    width: 250px;
+    height: 50px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(159, 37%, 20%)
+}
+
+button:active{
+    background-color: hsl(159, 37%, 20%);
+    transition: 0.5s;
+}
+
+.CartIcon {
+    position: absolute;
+    left: 65px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+}
+.ParfumeImgMobile{
+    display: none;
+    position: absolute;
+    width: 295px;
+}
+ 
+.MobileBr{
+    display: none;
+}
+
+@media screen and (max-width:1440px) {
+    .MainBlock{
+        position: relative;
+        width: 325px;
+    }
+
+    .SecondBlock{
+        position: absolute;
+        width: 295px;
+        height: 550px;
+        left: 5%;
+    }
+
+    .ParfumeImg{
+        display: none;
+    }
+
+    .ParfumeImgMobile{
+        display: block;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+
+    .SecondBlock h5{
+        position: absolute;
+        left: 5%;
+        bottom: 275px;
+    }
+
+    .MainTitle {
+        position: absolute;
+        left: 5%;
+        bottom: 190px;
+        font-size: 30px;
+        
+    }
+
+    .SecondBlock p {
+        position: absolute;
+        left: 5%;
+        bottom: 125px;
+        font-size: 12px;
+    }
+
+
+    .MobileBr {
+        display: block;
+    }
+
+    .DesktopBr {
+        display: none;
+    }
+
+    .BigPrice {
+        position: absolute;
+        left: 5%;
+        bottom: 60px;
+    }
+    
+    .LittlePrice {
+        position: absolute;
+        left: 55%;
+        bottom: 70px;
+    }
+
+    button {
+        position: absolute;
+        left: 8%;
+        bottom: 20px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
